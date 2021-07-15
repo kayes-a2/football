@@ -1,0 +1,355 @@
+    /*------------------
+         fonts start
+    ------------------*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+    /*-----------------
+         fonts end
+    -----------------*/
+
+    
+    /*-----------------------
+      comon font style start
+    ------------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+    /*-----------------------
+      comon font style end
+    ------------------------*/
+
+
+    /*-----------------------
+        header style start
+    -----------------------*/
+header{
+    background-color: #55efc4;
+    transition: 0.5s ease;
+    
+}
+header:hover{
+    background-color: #2D25A0
+    ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 136px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 42px;
+    align-items: center;
+    padding-right: 130px;
+}
+#heading{
+    font-size:50px;
+    color: white;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 240px;
+    
+}
+#banner-player{
+    
+    width: 556.01px;
+    height: 438px;
+    margin-left: 200px;
+    margin-right: 140px;
+    margin-bottom: 86px;
+    margin-top: 50px;
+}
+#banner-player:hover{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    transition: 1.5s;
+}
+#banner{
+    display: flex;
+    margin-left: 156px; 
+      
+}
+nav div a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*------------------
+    Link button
+------------------*/
+.link{
+    background-color: #00a8ff;
+    border-style:  1px solid ;
+    height: 30px;
+    width: 120px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+#log{
+    padding-left: 10px;
+}
+.link:hover{
+    background-image: linear-gradient(indigo,red)
+}
+.fas{
+    padding-left: 10px;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}    
+   
+    /*-----------------------
+        header style end
+    -----------------------*/
+
+
+
+    /*----------------------
+        main style start
+    ----------------------*/
+main{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.container{
+    margin-left: 180px;
+    margin-right: 210px;
+    padding-top: 70px;
+}
+    /*----------------------
+        main style end
+    ----------------------*/
+
+
+    /*------------------------
+        players style start
+    ------------------------*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.player{
+    background-color : #FFFFFF;
+    box-shadow : 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    text-align: justify;
+}
+
+.player .thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+
+.player-name{
+    font-size: 28px;
+}
+.player-info{
+    font-size: 16px;
+}
+    /*------------------------
+         players style end
+    ------------------------*/
+
+    
+    /*-----------------------
+        Epl highlight start 
+    -----------------------*/
+#epl-highlight{
+        display: flex;
+        width: 100%;
+}
+#highlight{
+    color: #0A0826;
+    padding-top: 224px;
+    padding-left: 182px;
+    text-align: justify;
+}
+#epl-cover{
+    width: 100%;
+    width: 567px;
+    height: 427px;
+    padding-left: 69px;
+    padding-top: 165px;
+    padding-right: 156px;
+  
+ }
+
+    /*-----------------------
+        Epl highlight end
+    -----------------------*/
+
+
+    /*----------------------------------
+       Epl best goals/saves/news start
+    ----------------------------------*/
+.epl-best{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 25px;
+}
+.epl{
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: #E02C6D;
+}
+.football{
+        padding-left: 50px;
+}
+
+.info a{
+    text-decoration: none;
+    display: block;
+    width: 300px;
+    color: grey;
+    text-align: justify;
+}
+    /*----------------------------
+       Epl best goals/saves/news end
+    ----------------------------*/
+
+    /*----------------------
+          footer start
+    -----------------------*/
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 158px 480px 63px 475px;      
+}
+
+.end img{
+    width: 70%;
+    padding-left: 0px;
+}
+.fab{
+    width: 2em;
+}   
+    /*-----------------------
+          footer end
+    -----------------------*/
+
+    /* -----------------------
+        Media quarey start
+    ------------------------*/
+
+@media (max-width:688px) {
+header{
+    width: 100%;
+    background-color: #2D25A0;
+}
+header:hover{
+    background-color:darkviolet;
+}
+nav{
+    display:none;
+}
+#heading{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+main{
+    padding: 0px;
+}
+.link{
+    width: 40%;
+    padding: 10px 10px;
+    margin: 10px auto;
+}
+#banner{
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;   
+}
+#banner-player{
+    margin: 0;
+    width: 100%;
+    height: 80%;
+}
+#banner-player:hover{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    transition: 5s;
+}
+.players{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;  
+}
+.player{
+    padding: 0px 2px;
+    text-align: justify;
+}
+.container{
+    margin: 0;
+    padding-top:30px ;
+}
+
+#epl-highlight{
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 0;
+}
+#highlight{
+    padding: 0px 2px ;
+    text-align: justify;
+    margin-top: 20px;
+    
+}
+#epl-cover{
+    width: 100%;
+    height: 80%;
+    padding: 0px;
+} 
+.football{
+    padding: 5px;
+}
+.info a{
+    text-align: justify;
+}
+.football iframe{
+    height: 180px;
+    width: 315px;
+}
+.epl{
+    margin-left: 0px;        
+}
+.epl-best{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    flex-direction: column;
+    align-items:flex-end;
+    margin: 0px;
+}
+.end{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    margin-top: 20px;
+}
+.end img{
+    padding-left: 0px;
+}
+}
+    /* -----------------------
+        Media quarey end
+    ------------------------*/
